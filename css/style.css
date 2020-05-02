@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* _-_-_-_-_ HEADER _-_-_-_-_ */
+
+header .container {
+    background: linear-gradient(90deg, #170075, #A200FF);
+    height: 46px;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+    line-height: 0px;
+}
+
+header .container-border-like {
+    background: linear-gradient(90deg, #9600FF, #5D00FF);
+    height: 4px;
+    margin-bottom: 68px;
+}
+
+header a {
+    margin: 0 7.5px;
+    display: inline-block;
+}
+
+header .item-4 {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+@media (max-width: 414px) {
+    header .container {
+        padding: 0 10px;
+    }
+
+    .nav, .item-1, .item-2, .item-3, .item-5, .item-6 {
+        display: none;
+    }
+
+    .item-4 {
+        margin-left: 39px;
+    }
+
+    header .container-border-like {
+        margin-bottom: 0px;
+    }
+
+    .hero-image {
+        height: 50vh;
+    }
+
+    div.hero-article h1 {
+        line-height: 2rem;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+    a.hero-headline {
+        font-size: 1.5rem;
+    }
+
+    div.hero-article {
+        margin-bottom: 70px;
+    }
+
+    div.hot-today-section {
+        padding: 0 15px;
+    }
+
+    .hot-today-section h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* _-_-_-_-_ NAV _-_-_-_-_ */
+
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav_container {
+    /* background-color: cadetblue; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* padding: 0 150px; */
+    max-width: 740px;
+    margin: 0 auto;
+
+    /* line-height: 0px; */
+    list-style: none;
+}
+
+.nav a {
+    /* background-color: gold; */
+    font-size: 1rem;
+    color: #090710;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #5D00FF;
+    /* text-decoration: underline; */
+}
+
+.divider-like {
+    background-color: #090710;
+    width: 1px;
+    height: 10px;
+}
+
+
+/* _-_-_-_-_ HERO ARTICLE _-_-_-_-_ */
+
+.hero-article {
+    margin-bottom: 130px;
+}
+
+.hero-article > a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.hero-article h1 {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-headline {
+    /* display: block; */
+    color: #5D00FF;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+.hero-article > a:hover + h1 > .hero-headline, .hero-headline:hover {
+    color: deeppink;
+}
+
+.hero-cap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nintendo-tag {
+    background-color: #E4000F;
+    color: #FFF;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 700;
+    padding: 2px 5px;
+    margin-right: 1px;
+}
+
+.review-tag {
+    background-color: #B200A4;
+    color: #FFF;
+    text-decoration: none;
+    font-size: .875rem;
+    font-weight: 700;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+
+.author {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.author a {
+    font-weight: 400;
+    color: #090710;
+}
+
+.author a:hover {
+    color: rgb(135, 83, 225);
+}
+
+
+/* _-_-_-_-_ WHAT'S HOT TODAY SECTION _-_-_-_-_ */
+
+section {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 130px;
+    padding: 0 40px;
+}
+
+h2 {
+    color: #5D00FF;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+
+    border-left: solid 2px #5D00FF;
+    padding-left: 12px;
+    margin-bottom: 55px;
+}
