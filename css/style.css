@@ -9,7 +9,7 @@
 
 /* _-_-_-_-_ HEADER _-_-_-_-_ */
 
-header .container {
+header .header-container {
     background: linear-gradient(90deg, #170075, #A200FF);
     height: 46px;;
     display: flex;
@@ -40,7 +40,7 @@ header .item-4 {
     
     /* header */
 
-    header .container {
+    header .header-container {
         padding: 0 10px;
     }
 
@@ -367,7 +367,7 @@ a .interview {
     font-weight: 700;
     text-decoration: none;
 
-    margin-bottom: 10px;
+    
 }
 
 a.hot-news-container_title:hover, .hot-news-container > a:hover + .hot-news-container_title {
@@ -379,9 +379,14 @@ a.hot-news-container_title:hover, .hot-news-container > a:hover + .hot-news-cont
     position: relative;
 }
 
+a.hot-news-container_title {
+    display: inline;
+    padding-bottom: 10px;
+}
+
 .hot p {
-    /* padding-top: 10px; */
-    margin-bottom: 10px;
+    padding-top: 10px;
+    /* margin-bottom: 10px; */
     color: #090710;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -416,3 +421,72 @@ a.hot-news-container_title:hover, .hot-news-container > a:hover + .hot-news-cont
 /* .button-more:hover object {
     fill: #FFF;
 } */
+
+/* _-_-_-_-_ LATEST REVIEWS SECTION _-_-_-_-_ */
+
+.latest-reviews {
+    height: 536px;
+    padding-left: 0;
+    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; */
+    max-width: 100%;
+    background: linear-gradient(90deg, #5D00FF, #B200A4);
+}
+
+.latest-reviews_container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 52px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.h2-white {
+    color: #FFF;
+    border-left: solid 2px #FFF;
+}
+
+/* _-_-_-_-_ FOOTER _-_-_-_-_ */
+
+footer .container-border-like {
+    background: linear-gradient(90deg, #9600FF, #5D00FF);
+    height: 4px;
+}
+
+footer .footer-container {
+    background: linear-gradient(90deg, #170075, #A200FF);
+    height: 222px;;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    padding: 0 40px;
+    line-height: 0px;
+    text-align: center;
+}
+
+.footer-logo {
+    padding-top: 45px;
+    margin-bottom: 15px;
+}
+
+.footer-container > .footer-icons {
+    
+
+    margin-bottom: 45px;
+}
+
+.footer-container > .footer-icons a {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.copyright {
+    color: #FFF;
+    font-size: .75rem;
+    /* padding-bottom: 52px; */
+    line-height: normal;
+}
