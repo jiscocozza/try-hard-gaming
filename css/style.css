@@ -7,6 +7,10 @@
     
 }
 
+p {
+    color: #090710;
+}
+
 /* _-_-_-_-_ HEADER _-_-_-_-_ */
 
 header .header-container {
@@ -280,10 +284,10 @@ h2 {
 
 /* _-_ Hot Grid _-_ */
 
-.hot {
-    /* background-color: crimson; */
+/* .hot {
+    background-color: crimson;
     padding-bottom: 130px;
-}
+} */
 
 .hot-grid {
     display: grid;
@@ -422,6 +426,7 @@ a.hot-news-container_title {
     fill: #FFF;
 } */
 
+
 /* _-_-_-_-_ LATEST REVIEWS SECTION _-_-_-_-_ */
 
 .latest-reviews {
@@ -443,12 +448,138 @@ a.hot-news-container_title {
     padding-top: 52px;
     padding-left: 40px;
     padding-right: 40px;
+    display: flex;
+    align-items: center;
+
 }
 
 .h2-white {
     color: #FFF;
     border-left: solid 2px #FFF;
+    margin: 0;
 }
+
+h3 {
+    color: #FFF;
+    border-right: solid 2px #FFF;
+    height: 100%;
+    
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 100;
+
+    padding-right: 10px;
+    margin-left: auto;
+    /* margin-bottom: 55px; */
+}
+
+
+/* _-_-_-_-_ GUIDES SECTION _-_-_-_-_ */
+
+.guides_container {
+    /* background-color: chocolate; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* _-_ NEW GUIDES _-_ */
+
+.new-guides {
+    /* background-color: cornflowerblue; */
+    width: 65%;
+}
+
+.popular-guides {
+    /* background-color: pink; */
+    width: 30%;
+    margin-left: auto;
+}
+
+.new-guides_anchor {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nintendo-border {
+    border-top: 8px solid #E4000F;
+}
+
+.ps-border {
+    border-top: 8px solid #003087;
+}
+
+.new-guides_image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.new-guides_title {
+    color: #5D00FF;
+    display: inline;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* text-decoration: none; */
+    font-family: 'Merriweather', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    /* margin-bottom: 54px; */
+}
+
+a.new-guides_title:hover, .new-guides_anchor:hover + .new-guides_title {
+    color: #F10062;
+}
+
+.new-guides_paragraph {
+    line-height: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.new-guides_item-1, .new-guides_item-2 {
+    padding-bottom: 60px;
+    /* background-color: #FFCD00; */
+}
+
+
+/* _-_ POPULAR GUIDES _-_ */
+
+.popular-guides_title {
+    font-size: 2.25rem;
+    color: #5D00FF;
+    border-right: 2px solid #5D00FF;
+    /* margin-left: auto; */
+    margin-top: 8px;
+    margin-bottom: 61px;
+    padding-right: 12px;
+    height: auto;
+    text-align: right;
+}
+
+.popular-guides_container {
+    background: linear-gradient(180deg, #5D00FF, #F10062);
+}
+
+.popular-guides_image {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* _-_ MORE GUIDES BUTTON _-_ */
+
+.guides_container .button-more_wrapper {
+    width: 100%;
+}
+
+
+
+
+
+
 
 /* _-_-_-_-_ FOOTER _-_-_-_-_ */
 
@@ -474,8 +605,6 @@ footer .footer-container {
 }
 
 .footer-container > .footer-icons {
-    
-
     margin-bottom: 45px;
 }
 
