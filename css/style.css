@@ -1,10 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    
 }
 
 p {
@@ -108,13 +106,13 @@ header .item-4 {
         padding: 0 15px;
     }
 
-    a.nintendo-border {
+    /* a.nintendo-border {
         border-top: 4px solid #E4000F;
-    }
+    } */
     
-    a.ps-border {
+    /* a.ps-border {
         border-top: 4px solid #003087;
-    }
+    } */
 
     div.new-guides {
         width: 100%;
@@ -148,7 +146,7 @@ header .item-4 {
 
     a.reviews-container_title {   
         font-size: 1rem;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
 
     p.reviews-container_paragraph {
@@ -255,13 +253,20 @@ a.selected {
     text-decoration: none;
     font-size: .875rem;
     font-weight: 700;
-    padding: 2px 5px;
+    /* padding: 2px 5px; */
+    /* padding: 2px 10px; */
+    padding: .25vw 1vw;
     margin-right: 1px;
 }
 
 .pc-tag {
     background-color: #FFCD00;
     color: #090710;
+}
+
+.xb-tag {
+    background-color: #107C10;
+    color: #FFF;
 }
 
 .nintendo-tag {
@@ -278,7 +283,8 @@ a.selected {
     text-decoration: none;
     font-size: .875rem;
     font-weight: 700;
-    padding: 2px 5px;
+    /* padding: 2px 5px; */
+    padding: .25vw 1vw;
     margin-right: 10px;
 }
 
@@ -306,6 +312,31 @@ a.selected {
     background-color: #FF4F33;
     color: #FFF;
 }
+
+.ps-news-tag {
+    background: linear-gradient(90deg, #003087, #5D00FF);
+}
+
+.ps-guide-tag {
+    background: linear-gradient(90deg, #003087, #F10062);
+}
+
+.nintendo-review-tag {
+    background: linear-gradient(90deg, #E4000F, #B200A4);
+}
+
+.nintendo-guide-tag {
+    background: linear-gradient(90deg, #E4000F, #F10062);
+}
+
+.pc-review-tag {
+    background: linear-gradient(90deg, #FFCD00 1%, #B200A4);
+}
+
+.xb-review-tag {
+    background: linear-gradient(90deg, #107C10 1%, #B200A4);
+}
+
 
 .author {
     font-style: italic;
@@ -360,6 +391,17 @@ h2 {
     margin-bottom: 45px;
 }
 
+/* .hot-grid_item-1, .hot-grid_item-2 {
+    transition: background-color 150ms, transform 150ms;
+    transition-timing-function: ease;
+    padding: 10px;
+}
+
+.hot-grid_item-1:hover, .hot-grid_item-2:hover {
+    background-color: #FAFAFA;
+    transform: scale(1.025);
+} */
+
 /* .hot-grid > div {
     background-color: goldenrod;
 } */
@@ -380,25 +422,25 @@ a .post-image {
     object-fit: cover;
 }
 
-a .review {
+/* a .review {
     border-top: 6px solid #B200A4;
-}
+} */
 
-a .guide {
+/* a .guide {
     border-top: 6px solid #F10062;
-}
+} */
 
-a .event {
+/* a .event {
     border-top: 6px solid #1387F7;
-}
+} */
 
-a .news {
+/* a .news {
     border-top: 6px solid #5D00FF;
-}
+} */
 
-a .interview {
+/* a .interview {
     border-top: 6px solid #FF4F33;
-}
+} */
 
 .tags {
     display: inline-flex;
@@ -411,13 +453,17 @@ a .interview {
 
 .score-tag {
     display: block;
-    background: linear-gradient(90deg, #E4000F, #B200A4);
-    color: white;
+    /* background: linear-gradient(90deg, #E4000F, #B200A4); */
+    background-color: #B200A4;
+    color: #FFF;
+    /* border: solid 1px #FFF; */
     
-    width: 44px;
+    /* width: 44px; */
+    /* padding: 2px 10px; */
+    padding: .25vw 1vw;
     
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
     text-align: center;
     
@@ -571,13 +617,13 @@ h3 a:hover {
     margin-bottom: 20px;
 }
 
-.nintendo-border {
+/* .nintendo-border {
     border-top: 8px solid #E4000F;
-}
+} */
 
-.ps-border {
+/* .ps-border {
     border-top: 8px solid #003087;
-}
+} */
 
 .new-guides_image {
     display: block;
@@ -810,15 +856,42 @@ footer .footer-container {
 /* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 /* _-_-_-_-_ REVIEWS PAGE _-_-_-_-_ */
 
+.reviews-header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 55px;
+}
 
+.reviews-header h2 {
+    margin: 0;
+}
+
+.filter-by-platform-wrapper {
+    margin-left: auto;
+    padding-right: 5px;
+    color: #5D00FF;
+    border-right: 2px solid #5D00FF;
+}
+
+.filter-by-platform {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 100;
+    padding-right: 10px;
+}
+
+.filter-by-platform-wrapper .platform-tag {
+    margin: 0 5px;
+}
 
 .reviews-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .8fr 1fr 1fr;
     /* grid-template-rows: 1fr; */
-    column-gap: 20px;
+    column-gap: 30px;
     /* row-gap: 45px;    */
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 40px;
     /* background-color: tomato; */
 }
@@ -835,10 +908,18 @@ footer .footer-container {
     /* width: 50%; */
 }
 
+.section-top-border {
+    width: 100%;
+    height: 2.5%;
+    position: absolute;
+    top: 0;
+}
+
 .reviews-container_image {
     background-size: cover;
     width: 100%;
-    height: 30vh;
+    height: 100%;
+    /* height: 30vh; */
     /* object-fit: cover; */
     background-color: #5D00FF;
 }
@@ -851,6 +932,10 @@ footer .footer-container {
     background-image: url("../images/cod-warzone-01.jpg");
 }
 
+.item-03 > .reviews-container_anchor > .reviews-container_image {
+    background-image: url("../images/sot-01.jpg");
+}
+
 /* .reviews-container_anchor img {
     object-fit: cover;
 } */
@@ -860,7 +945,7 @@ footer .footer-container {
     /* display: inline; */
     font-family: 'Merriweather', serif;
     font-size: 1.75rem;
-    font-weight: 400;
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -875,8 +960,9 @@ footer .footer-container {
     line-height: 1.5rem;
 }
 
-/* .reviews-container_text .author {
-
-} */
+.reviews-container_text {
+    /* margin-bottom: 20px; */
+    padding: 10px 0 20px 0;
+}
 
 
