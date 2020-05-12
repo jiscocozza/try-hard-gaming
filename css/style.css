@@ -133,6 +133,17 @@ header .item-4 {
     section.reviews-list {
         padding: 0 15px;
     }
+
+    div.reviews-header {
+        display: inline;
+    }
+
+    div.filter-by-platform-wrapper {
+        padding: 40px 0 50px 0;
+        border: none;
+        /* text-align: center; */
+        /* margin: 0 auto; */
+    }
     
     div.reviews-container {
         grid-template-columns: .5fr 1fr;
@@ -323,6 +334,10 @@ a.selected {
 
 .nintendo-review-tag {
     background: linear-gradient(90deg, #E4000F, #B200A4);
+}
+
+.ps-review-tag {
+    background: linear-gradient(90deg, #003087, #B200A4);
 }
 
 .nintendo-guide-tag {
@@ -878,7 +893,18 @@ footer .footer-container {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.125rem;
     font-weight: 100;
-    padding-right: 10px;
+    /* padding-right: 10px; */
+}
+
+.filter-by-all {
+    /* font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none; */
+    color: #FFF;
+    background-color: #B200A4;
+    /* padding-right: 10px; */
+    /* text-align: center; */
+    display: inline-block;
 }
 
 .filter-by-platform-wrapper .platform-tag {
@@ -934,6 +960,10 @@ footer .footer-container {
 
 .item-03 > .reviews-container_anchor > .reviews-container_image {
     background-image: url("../images/sot-01.jpg");
+}
+
+.item-04 > .reviews-container_anchor > .reviews-container_image {
+    background-image: url("../images/ff-vii.jpg");
 }
 
 /* .reviews-container_anchor img {
