@@ -39,7 +39,7 @@
                 <img src="images/icons/search-24px.svg" alt="Search icon">
             </a>
 
-            <a class="item-7" href="#">
+            <a id="hamburguer" class="item-7" href="#">
                 <img src="images/icons/menu-24px.svg" alt="Hamburguer menu icon">
             </a>
 
@@ -47,41 +47,66 @@
 
         <div class="container-border-like"></div>
 
-        <div class="nav">
-            <ul class="nav_container">
+        <nav id="sideNavContainer" class="side-nav-container">
+            
+            <ul class="side-nav">
                 <li>
-                    <a href="#">News</a>
+                    <a class="side-nav_item-1" href="index.html">Home</a>
                 </li>
-                <div class="divider-like"></div>
                 <li>
-                    <a class="selected" href="reviews.html">Reviews</a>
+                    <a class="side-nav_item-2" href="#">News</a>
                 </li>
-                <div class="divider-like"></div>
                 <li>
-                    <a href="#">Guides</a>
+                    <a class="side-nav_item-3" href="reviews.html">Reviews</a>
                 </li>
-                <div class="divider-like"></div>
                 <li>
-                    <a href="#">Interviews</a>
+                    <a class="side-nav_item-4" href="#">Guides</a>
                 </li>
-                <div class="divider-like"></div>
                 <li>
-                    <a href="#">Events</a>
+                    <a class="side-nav_item-5" href="#">Interviews</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-6" href="#">Events</a>
                 </li>
             </ul>
-        </div> <!-- Closes .nav -->
+
+        </nav> <!-- Closes .side-nav-container -->
 
     </header>
+
+    <nav class="nav">
+        <ul class="nav_container">
+            <li>
+                <a href="#">News</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a class="selected" href="reviews.html">Reviews</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Guides</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Interviews</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Events</a>
+            </li>
+        </ul>
+    </nav> <!-- Closes .nav -->
 
     <main>
 
         <div class="hero-article">
                
-            <a href="#">
+            <a href="articles/pokemon-sword-shield-review.html">
                 <img class="hero-image" src="images/pkmon-ss-hero-01.jpg" alt="Hero image">
             </a>
             <h1>
-                <a class="hero-headline" href="#">Pokemon Sword and Shield is Lovely and Warm, but Not a Next-Gen Pokemon Game</a>
+                <a class="hero-headline" href="articles/pokemon-sword-shield-review.html">Pokemon Sword and Shield is Lovely and Warm, but Not a Next-Gen Pokemon Game</a>
             </h1>      
 
             <div class="hero-cap">    
@@ -110,9 +135,9 @@
                 
                 <div class="reviews-container item-01">
                 
-                    <a class="reviews-container_anchor" href="#">
+                    <a class="reviews-container_anchor nintendo-review-tag" href="#">
                         <div class="reviews-container_image"></div>
-                        <div class="section-top-border nintendo-review-tag"></div>
+                        <!-- <div class="section-top-border nintendo-review-tag"></div> -->
                         <!-- <img src="images/ac-01.jpg" alt="Animal crossing cover"></img> -->
                         <div class="tags">
                             <div class="platform-tag nintendo-tag">N</div>
@@ -129,9 +154,9 @@
 
                 <div class="reviews-container item-02">
                 
-                    <a class="reviews-container_anchor" href="#">
+                    <a class="reviews-container_anchor pc-review-tag" href="#">
                         <div class="reviews-container_image"></div>
-                        <div class="section-top-border pc-review-tag"></div>
+                        <!-- <div class="section-top-border pc-review-tag"></div> -->
                         <!-- <img src="images/ac-01.jpg" alt="Animal crossing cover"></img> -->
                         <div class="tags">
                             <div class="platform-tag pc-tag">PC</div>
@@ -148,9 +173,9 @@
 
                 <div class="reviews-container item-03">
                 
-                    <a class="reviews-container_anchor" href="#">
+                    <a class="reviews-container_anchor xb-review-tag" href="#">
                         <div class="reviews-container_image"></div>
-                        <div class="section-top-border xb-review-tag"></div>
+                        <!-- <div class="section-top-border xb-review-tag"></div> -->
                         <!-- <img src="images/ac-01.jpg" alt="Animal crossing cover"></img> -->
                         <div class="tags">
                             <div class="platform-tag xb-tag">XB</div>
@@ -167,9 +192,9 @@
 
                 <div class="reviews-container item-04">
                 
-                    <a class="reviews-container_anchor" href="#">
+                    <a class="reviews-container_anchor ps-review-tag" href="#">
                         <div class="reviews-container_image"></div>
-                        <div class="section-top-border ps-review-tag"></div>
+                        <!-- <div class="section-top-border ps-review-tag"></div> -->
                         <!-- <img src="images/ac-01.jpg" alt="Animal crossing cover"></img> -->
                         <div class="tags">
                             <div class="platform-tag ps-tag">PS</div>
@@ -219,5 +244,6 @@
         </div> <!-- Closes .footer-container -->
 
     </footer>
-
+    <script src="js/side-nav.js"></script>
 </body>
+</html>

@@ -39,7 +39,7 @@
                 <img src="images/icons/search-24px.svg" alt="Search icon">
             </a>
 
-            <a class="item-7" href="#">
+            <a id="hamburguer" class="item-7" href="#">
                 <img src="images/icons/menu-24px.svg" alt="Hamburguer menu icon">
             </a>
 
@@ -47,7 +47,32 @@
 
         <div class="container-border-like"></div>
 
-        <div class="nav">
+        <div id="sideNavContainer" class="side-nav-container">
+            
+            <ul class="side-nav">
+                <li>
+                    <a class="side-nav_item-1" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-2" href="#">News</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-3" href="reviews.html">Reviews</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-4" href="#">Guides</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-5" href="#">Interviews</a>
+                </li>
+                <li>
+                    <a class="side-nav_item-6" href="#">Events</a>
+                </li>
+            </ul>
+
+        </div> <!-- Closes .side-nav-container -->
+
+        <!-- <div class="nav">
             <ul class="nav_container">
                 <li>
                     <a href="#">News</a>
@@ -69,19 +94,43 @@
                     <a href="#">Events</a>
                 </li>
             </ul>
-        </div> <!-- Closes .nav -->
+        </div> -->
 
     </header>
+
+    <nav class="nav">
+        <ul class="nav_container">
+            <li>
+                <a href="#">News</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="reviews.html">Reviews</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Guides</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Interviews</a>
+            </li>
+            <div class="divider-like"></div>
+            <li>
+                <a href="#">Events</a>
+            </li>
+        </ul>
+    </nav> <!-- Closes .nav -->
 
     <main>
 
         <div class="hero-article">
                
-            <a href="#">
+            <a href="articles/pokemon-sword-shield-review.html">
                 <img class="hero-image" src="images/pkmon-ss-hero-01.jpg" alt="Hero image">
             </a>
             <h1>
-                <a class="hero-headline" href="#">Pokemon Sword and Shield is Lovely and Warm, but Not a Next-Gen Pokemon Game</a>
+                <a class="hero-headline" href="articles/pokemon-sword-shield-review.html">Pokemon Sword and Shield is Lovely and Warm, but Not a Next-Gen Pokemon Game</a>
             </h1>      
 
             <div class="hero-cap">    
@@ -99,9 +148,9 @@
                 <div class="hot-grid_item-1">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor nintendo-review-tag" href="#">
                             <img class="post-image review" src="images/ac-01.jpg" alt="Animal crossing cover"></img>
-                            <div class="section-top-border nintendo-review-tag"></div>
+                            <!-- <div class="section-top-border nintendo-review-tag"></div> -->
                             <div class="tags">
                                 <div class="platform-tag nintendo-tag">N</div>
                                 <div class="section-tag review-tag">Review</div>
@@ -109,6 +158,8 @@
                             </div>
                         </a>
                         
+                        <!-- <div class="nintendo-review-tag-bg"></div> -->
+
                         <a class="hot-news-container_title" href="#">Animal Crossing</a>
                         <p>Data mine hints at vegetable growing, diving, and Crazy Redd’s return.</p>
                         <p class="author">by <a href="#">Andrea Nagle</a>, 12 Mar 2020</p>
@@ -120,9 +171,9 @@
                 <div class="hot-grid_item-2">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor guide-tag" href="#">
                             <img class="post-image guide" src="images/doom-eternal-01.jpg" alt="Doom eternal cover"></img>
-                            <div class="section-top-border guide-tag"></div>
+                            <!-- <div class="section-top-border guide-tag"></div> -->
                             <div class="tags">
                                 <div class="section-tag guide-tag">Guide</div>
                             </div>
@@ -139,9 +190,9 @@
                 <div class="hot-grid_item-3">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor event-tag" href="#">
                             <img class="post-image event" src="images/e3-01.jpg" alt="E3 conference cover"></img>
-                            <div class="section-top-border event-tag"></div>
+                            <!-- <div class="section-top-border event-tag"></div> -->
                             <div class="tags">
                                 <div class="section-tag event-tag">Event</div>
                             </div>
@@ -158,9 +209,9 @@
                 <div class="hot-grid_item-4">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor ps-news-tag" href="#">
                             <img class="post-image news" src="images/dualSense-01.jpg" alt="PS5 controller"></img>
-                            <div class="section-top-border ps-news-tag"></div>
+                            <!-- <div class="section-top-border ps-news-tag"></div> -->
                             <div class="tags">
                                 <div class="platform-tag ps-tag">PS</div>
                                 <div class="section-tag news-tag">News</div>
@@ -178,9 +229,9 @@
                 <div class="hot-grid_item-5">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor interview-tag" href="#">
                             <img class="post-image interview" src="images/wd-legion-01.jpg" alt="Watch Dogs Legion cover"></img>
-                            <div class="section-top-border interview-tag"></div>
+                            <!-- <div class="section-top-border interview-tag"></div> -->
                             <div class="tags">
                                 <div class="section-tag interview-tag">Interview</div>
                             </div>
@@ -197,9 +248,9 @@
                 <div class="hot-grid_item-6">
                     <div class="hot-news-container">
         
-                        <a href="#">
+                        <a class="hot-news-container_anchor pc-review-tag" href="#">
                             <img class="post-image review" src="images/cod-warzone-01.jpg" alt="Call of Duty War Zone"></img>
-                            <div class="section-top-border pc-review-tag"></div>
+                            <!-- <div class="section-top-border pc-review-tag"></div> -->
                             <div class="tags">
                                 <div class="platform-tag pc-tag">PC</div>
                                 <div class="section-tag review-tag">Review</div>
@@ -363,6 +414,6 @@
         </div>
 
     </footer>
-
+    <script src="js/side-nav.js"></script>
 </body>
 </html>
