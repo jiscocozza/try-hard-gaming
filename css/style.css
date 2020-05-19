@@ -1094,6 +1094,7 @@ p.article-quote {
 
 .review-footer_image {
     max-height: 700px;
+    max-width: 450px;
     padding-right: 55px;
     object-fit: cover;
 }
